@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
 [data-theme="light"]{
     --primary: #6493da;
     --text: black;
     --background:#fff;
-    --background-nav: rgba(49, 49, 49, 0.5);
+    --background-nav: rgba(49, 49, 49, 0.897);
+    --text-navbar : 
 }
 
 
 [data-theme="dark"]{
-    --primary: #b6271d;
-    --background : #000000fa;
-    --text: #fff;
-    --background-nav: rgba(146, 145, 145, 0.5);
+    --primary: #0d155c;
+    --background : #212121;
+    --text: #f7f7f7cc;
+    --background-nav: rgba(146, 145, 145, 0.8);
+    --text-navbar : black;
 }
 
 h1{
@@ -31,7 +32,7 @@ h1{
 body{
     background-color: var(--background);
     color: var(--text);
-    font-family: 'Poppins', sans-serif;
+    font-family:  'Inter', sans-serif;
     padding: 1em;
     text-align: justify;
     margin: 0;
@@ -112,7 +113,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
+    font-family:  'Inter', sans-serif;
     font-size: 62.5%;
     font-size: 10px;
 }
@@ -133,7 +134,7 @@ body {
     height: auto;
     padding-left: 2rem;
     padding-top: 3rem;
-    
+    font-weight: bold;
 }
 
 img{
@@ -148,8 +149,9 @@ img{
 
 .nav div.logo a {
     text-decoration: none;
-    color: var(--text);
+    color: var(--text-navbar);
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .nav div.logo a:hover {
@@ -181,9 +183,11 @@ img{
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: var(--text);
+    color: var(--text-navbar);
     line-height: 65px;
     font-size: 2.4rem;
+    font-weight: bold;
+    
 }
 
 .nav div.main_list ul li a:hover {
@@ -200,10 +204,16 @@ img{
 .home {
     width: 100%;
     height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
     background-position: center top;
 	background-size:cover;
 }
+
+video{
+    height: 100%;
+    
+}
+
+
 
 .navTrigger {
     display: none;
@@ -236,6 +246,8 @@ img{
         width: 100%;
         height: 0;
         overflow: hidden;
+        padding-top: 0;
+        font-weight: bold;
     }
     .nav div.show_list {
         height: auto;
@@ -248,8 +260,7 @@ img{
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: var(--background);
-        /*same background color of navbar*/
+        background-color: var(--background-nav);
         background-position: center top;
     }
     .nav div.main_list ul li {
@@ -488,7 +499,7 @@ img{
 }
 @media all and (max-width:700px){
 	.myP {
-		padding:2%;
+		padding: 5%;
 	}
 }
 
