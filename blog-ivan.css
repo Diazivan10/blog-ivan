@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
 [data-theme="light"]{
-    --primary: #6493da;
+    --primary: #73a2cb;
     --text: black;
-    --background:#fff;
+    --background:linear-gradient(167deg, #ffffff 0%, #73a2cb 49%, #ffffff 100%);
     --background-nav: rgba(49, 49, 49, 0.897);
-    --text-navbar : 
+    --text-navbar : black;
+    
 }
 
 
 [data-theme="dark"]{
-    --primary: #0d155c;
-    --background : #212121;
+    --primary: #0b1aa5;
+    --background: linear-gradient(167deg, #000000 14%, #797a75 59%, #000000 87%);
     --text: #f7f7f7cc;
     --background-nav: rgba(146, 145, 145, 0.8);
     --text-navbar : black;
@@ -30,7 +31,7 @@ h1{
 
 
 body{
-    background-color: var(--background);
+    background: var(--background);
     color: var(--text);
     font-family:  'Inter', sans-serif;
     padding: 1em;
@@ -125,7 +126,10 @@ body {
     width: 100%;
     height: 90px;
     position: fixed;
-    background-color: rgba(146, 145, 145, 0.5);
+    background-color: rgba(252, 252, 252, 0.712);
+    z-index: 1;
+    opacity: 0.13;
+    
 }
 
 .nav div.logo a{
@@ -203,13 +207,16 @@ img{
 
 .home {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-position: center top;
 	background-size:cover;
 }
 
 video{
-    height: 100%;
+    width: 940px;
+    opacity: 0.85;
+    height: auto;
+    display: block;
     
 }
 
@@ -225,6 +232,13 @@ video{
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
+
+.nav:hover{
+    opacity: 1;
+    background-color: rgba(252, 252, 252, 0.712);
+}
+
+
 
 
 /* Media qurey section */
@@ -280,6 +294,12 @@ video{
     .nav div.main_list ul li.modo-oscuro{
         width: 95%;
     }
+
+    video{
+        width: 415px;
+       
+
+    }
         
     
 }
@@ -300,7 +320,7 @@ video{
 }
 
 .navTrigger i {
-    background-color: var(--background);
+    background-color: var(--text-navbar);
     border-radius: 2px;
     content: '';
     display: block;
@@ -481,10 +501,6 @@ video{
     padding: 0;
     background-color: var(--background-nav);
 }
-
-
-
-
 
 
 .myH2 {
