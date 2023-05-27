@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 @import url(card.css);
+@import url(timeline.css);
 
 [data-theme="light"]{
     --primary: #73a2cb;
@@ -214,7 +215,7 @@ img{
 }
 
 video{
-    width: 940px;
+    width: 100%;
     opacity: 0.85;
     height: auto;
     display: block;
@@ -250,7 +251,7 @@ video{
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:768px) and (max-width:953px) {
     .navTrigger {
         display: block;
     }
@@ -297,7 +298,8 @@ video{
     }
 
     video{
-        width: 415px;
+        width: 100%;
+        
        
 
     }
@@ -519,4 +521,6 @@ video{
 		padding: 5%;
 	}
 }
+
+
 

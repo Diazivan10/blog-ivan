@@ -2,15 +2,11 @@
 @import url(blog-ivan.css);
 
 
-
-table{
+.container-cards{
     display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
     justify-content: center;
-    
-}
-
-tr {
-    margin: 10px;
 }
 
 .header_card {
@@ -34,8 +30,8 @@ tr {
     margin: 0 60px 0 0;
     background-color: black;
     border-radius: 10px;
-    z-index: 1;
     transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgb(32, 32, 32);
     
 
 }
@@ -47,8 +43,8 @@ tr {
     margin: 0 0 0 60px;
     background-color: black;
     border-radius: 10px;
-    z-index: 1;
     transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgb(32, 32, 32);
     
 
 }
@@ -104,6 +100,10 @@ tr {
     
 }
 
+p .body_card {
+    font-size: 10px;
+}
+
 .card_1:hover, .card_2:hover{
     transform: scale(1.2,1.2);
     cursor: default;
@@ -112,3 +112,5 @@ tr {
 .footer_card:hover{
     cursor: pointer;
 }
+
+
