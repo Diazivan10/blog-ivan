@@ -6,7 +6,7 @@
     display: flex;
     margin-left: 15%;
     margin-right: 15%;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header_card {
