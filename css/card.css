@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url(blog-ivan.css);
+
+
+.container-cards{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: center;
+}
+
+.header_card {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.footer_card {
+    background: var(--background-nav);
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+    padding: 0.8em 1.7em;
+}
+
+.card_1{
+    width: 220px;
+    height: 265px;
+    margin: 0 60px 0 0;
+    background-color: black;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgb(32, 32, 32);
+    
+
+}
+
+
+.card_2{
+    width: 220px;
+    height: 265px;
+    margin: 0 0 0 60px;
+    background-color: black;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgb(32, 32, 32);
+    
+
+}
+
+.card_link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.tools{
+    display: flex;  
+    align-items: center;
+    padding: 9px;  
+
+}
+
+.circle {
+    padding: 0 4px;
+
+}
+
+.box{
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50px;
+
+}
+
+.red{
+    background-color: #ff605c;
+}
+
+
+.yellow{
+    background-color: #ffbd44;
+}
+
+
+.green{
+    background-color: #00ca4e;
+}
+ 
+
+ div.card_content{
+    color: #e9e7e7ef;
+    font-size: 12px;
+    text-align: justify;
+    padding: 5%;
+    font-weight: bold;
+    
+}
+
+p .body_card {
+    font-size: 10px;
+}
+
+.card_1:hover, .card_2:hover{
+    transform: scale(1.2,1.2);
+    cursor: default;
+}
+
+.footer_card:hover{
+    cursor: pointer;
+}
+
+
