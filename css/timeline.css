@@ -12,16 +12,26 @@
 
 
 .timeline-content{
-    background-color: brown;
+    background: var(--background-nav);
     width: 0;
     flex-grow: 1;
     object-fit: cover;
     opacity: 0.8;
     transition: 0.5s ease;
     text-align: center;
+    color: black;
+    font-weight: bold;
+    
 }
 
+.timeline-content-header{
+    font-weight: bold
+}
 
+.timeline-content:hover .timeline-content-header{
+    transform: scale(2.2);
+    transition: transform 0.2s ease-in-out;
+}
 
 .timeline-content:hover{
     cursor: crosshair;
@@ -39,8 +49,8 @@
 
 .timeline-content:hover .timeline-content-body {
     opacity: 1;
-    transition: opacity 2s ease-in;
-    font: bold;
+    transition: opacity 1.5s ease-in-out;   
+    
 }
 
 
