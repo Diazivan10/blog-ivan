@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/blog-ivan.css" />
     <link rel="stylesheet" href="css/card.css" />
-    <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/skills.css" />
     <link rel="stylesheet" href="css/contacto.css" />
     <link
       rel="stylesheet"
@@ -36,16 +36,8 @@
           <ul class="navlinks">
             <li><a href="#">Inicio</a></li>
             <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#SobreMi">Sobre Mi</a></li>
-            <li><a href="#contacto">Contact</a></li>
-            <li class="modo-oscuro">
-              <span class="material-symbols-outlined"> light_mode </span>
-              <label class="switch">
-                <input type="checkbox" id="slider" checked />
-                <span class="slider"></span>
-              </label>
-              <span class="material-symbols-outlined"> mode_night </span>
-            </li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
         <span class="navTrigger">
@@ -86,6 +78,7 @@
               <button class="footer_card">
                 <a
                   href="https://criminallegalassociates.com/"
+                  target="_blank"
                   class="card_link"
                 >
                   Visitar</a
@@ -114,7 +107,40 @@
                 procesos automatizables.
               </p>
               <button class="footer_card">
-                <a href="https://github.com/Diazivan10" class="card_link">
+                <a
+                  href="https://github.com/Diazivan10"
+                  target="_blank"
+                  class="card_link"
+                >
+                  Visitar</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card_3">
+            <div class="tools">
+              <div class="circle">
+                <span class="red box"></span>
+              </div>
+              <div class="circle">
+                <span class="yellow box"></span>
+              </div>
+              <div class="circle">
+                <span class="green box"></span>
+              </div>
+            </div>
+            <div class="card_content">
+              <h1 class="header_card">Curriculum Vitae</h1>
+              <p>
+                Me permito dejar el enlace a mi curriculum, donde se evidencia
+                mi experiencia en el desarrollo y analista de pruebas.
+              </p>
+              <button class="footer_card">
+                <a
+                  href="assets/cv-ivandiaz.pdf"
+                  target="_blank"
+                  class="card_link"
+                >
                   Visitar</a
                 >
               </button>
@@ -123,74 +149,61 @@
         </div>
       </div>
     </section>
-    <!--Seccion Sobre mi-->
-    <section class="Sobre_mi" id="SobreMi">
-      <h2 class="myH2" id="sobre-mi">Sobre mi</h2>
-      <div class="timeline">
-        <div class="timeline-content">
-          <h2 class="timeline-content-header">2022</h2>
-          <p class="timeline-content-body">
-            Experian Latam (QA) Desarrollo e implementación de pruebas para el
-            correcto funcionamiento del software del cliente Verificación de
-            servicios por medio del aplicativo SOAPUI.
-          </p>
-        </div>
-        <div class="timeline-content">
-          <h2 class="timeline-content-header">2021 - 2022</h2>
-          <p class="timeline-content-body">
-            Choucair Cárdenas Testing(QA) Desarrollo e implementación de pruebas
-            automatizadas para el correcto funcionamiento del software del
-            cliente a nivel continental para países como: (ARGENTINA, COLOMBIA,
-            URUGUAY, CHILE, PERÚ, ECUADOR).
-          </p>
-        </div>
-        <div class="timeline-content">
-          <h2 class="timeline-content-header">2021</h2>
-          <p class="timeline-content-body">
-            Criminal Legal Associates (Desarrollador Web) Desarrollo de página
-            web y consultorías para manejo de ella y soporte al usuario por
-            desarrollo.
-          </p>
-        </div>
-        <div class="timeline-content">
-          <h2 class="timeline-content-header">2020 - 2021</h2>
-          <p class="timeline-content-body">
-            Hexa Solutions(QA) Analista de pruebas, diseño de casos, Análisis de
-            software para aplicaciones web y móviles, análisis de servicios API,
-            Docker, Consultas en BD.
-          </p>
-        </div>
-        <div class="timeline-content">
-          <h2 class="timeline-content-header">2019 - 2020</h2>
-          <p class="timeline-content-body">
-            Alianza Diagnostica S.A.(Desarrollador Web) Desarrollo de reportes
-            para la parte administrativa, Consultas en base de datos,
-            modificaciones de órdenes (BD).
-          </p>
-        </div>
+    <!--Seccion Habilidades-->
+    <section class="habilidades" id="habilidades">
+      <h2 class="myH2" id="sobre-mi">Habilidades</h2>
+
+      <div class="skills-content">
+        <ul class="lista">
+          <li class="html">
+            <p>Html</p>
+            <img src="assets/html.png" alt="" id="html" />
+          </li>
+          <li class="css">
+            <p>Css</p>
+            <img src="assets/css.png" alt="" id="css" />
+          </li>
+          <li class="javascript">
+            <p>Javascript</p>
+            <img src="assets/javascript.png" alt="" id="javascript" />
+          </li>
+          <li class="github">
+            <p>Github</p>
+            <img src="assets/github.png" alt="" id="github" />
+          </li>
+          <li class="bootstrap">
+            <p>Bootstrap</p>
+            <img src="assets/bootstrap.png" alt="" id="bootstrap" />
+          </li>
+        </ul>
       </div>
     </section>
     <!--Seccion Contacto-->
-    <section class="contacto" id="id">
+    <section class="contacto" id="contacto">
       <div>
         <h2 class="myH2" id="contacto">Contacto</h2>
-        <form action="" method="">
+        <form action="https://formsubmit.co/061d4fcc6e1ce13b502ee8faa1229203" method="POST">
           <div class="content-form">
-            <div class="content-name-lastname">
+            <div class="content-name">
               <label for="nombre">Nombre</label>
-              <input type="text" id="name" />
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="content-lastname">
               <label for="apellido">Apellido</label>
-              <input type="text" id="lastname" />
+              <input type="text" id="lastname" name="lastname" />
             </div>
             <div class="content-phone">
-              <label for="phone">Celular</label>
-              <input type="number" id="phone"  />
+              <label for="phone" class="phone">Celular</label>
+              <input type="number" id="phone" name="phone" />
             </div>
-            <div class="message">
+            <div class="content-message">
               <label for="mensaje">Mensaje</label>
-              <input type="text" id="message" />
+              <textarea name="message" id="message" cols="10" rows="10"class="message" name="message"></textarea>
             </div>
             <button class="submit" type="submit">Enviar</button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/blog-ivan/blog-ivan.html">
+            <input type="hidden" name="_captcha" value="false">
+            
           </div>
         </form>
       </div>

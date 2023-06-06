@@ -25,22 +25,32 @@ input[type=number]::-webkit-outer-spin-button {
     gap: 10px;
 }
 
-.content-name-lastname{
-    width: 100%;
-    
-    
-    
-}
 
 #name, #lastname, #phone, #message {
     border-radius: 5px;
     border-style: none;
     border: 1px solid #817e7e;
     width: 100%;
+    resize: none;
+    background-color:rgb(13,17,23);
+    color: white;
+    font-family:  'Inter', sans-serif;
+
 }
 
-.content-phone{
-    justify-content: center;
+
+
+
+.submit{
+    border-radius: 15px;
+    color: rgb(0,186,219);
+    cursor: pointer;
+    border: 2px solid rgb(0,186,219);
+}
+
+.submit:hover{
+    background-color: rgb(0,186,219);
+    color: rgb(13,17,23);
 }
 
 
