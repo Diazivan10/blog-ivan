@@ -13,10 +13,11 @@
     text-align: center;
     font-weight: bolder;
     font-size: 20px;
+    margin: 0;
 }
 
 .footer_card {
-    background: var(--background-nav);
+    background:rgb(192,192,202);
     display: block;
     margin: auto;
     border: none;
@@ -24,10 +25,11 @@
     padding: 0.8em 1.7em;
 }
 
+
+
 .card_1{
     width: 220px;
     height: 265px;
-    margin: 0 60px 0 0;
     background-color: black;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -36,22 +38,30 @@
 
 }
 
+
+.card_3{
+    width: 220px;
+    height: 265px;
+    background-color: black;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgb(32, 32, 32);
+    
+
+}
 
 .card_2{
     width: 220px;
     height: 265px;
-    margin: 0 0 0 60px;
     background-color: black;
     border-radius: 10px;
     transition: transform 0.3s ease;
     box-shadow: 0 0 20px rgb(32, 32, 32);
-    
-
 }
 
 .card_link {
     text-decoration: none;
-    color: aliceblue;
+    color: black;
 }
 
 .tools{
@@ -104,7 +114,7 @@ p .body_card {
     font-size: 10px;
 }
 
-.card_1:hover, .card_2:hover{
+.card_1:hover, .card_2:hover, .card_3:hover{
     transform: scale(1.2,1.2);
     cursor: default;
 }
@@ -113,4 +123,19 @@ p .body_card {
     cursor: pointer;
 }
 
+@media screen and (min-width: 360px) and (max-width: 647px) {
+
+    .container-cards{
+        padding-left: 10%;
+        padding-right: 10%;
+        display: block;
+        justify-content: space-between;
+    }
+
+    .card_1, .card_2 , .card_3 {
+        margin: 30px 0;
+        width: 225px;
+    }
+
+}
 
